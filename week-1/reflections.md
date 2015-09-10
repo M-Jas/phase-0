@@ -28,3 +28,15 @@ Shell and  Bash  are command line systems that can be similar and different at t
 
 
 ### Forking and Cloning
+Snapple Fact's of git/GitHub instructions.
+
+Create New Repo Git: In your Bash type the git init command followed by what you want to name the repo and Snap you are done.
+Create New Repo GitHub: Work your way to the GitHub site. Once you are there, look for the Plus "+" sign in the top right side. Please go there and click the +, then select New Repo, and then follow the instructions on the next page.
+
+Fork a Repo: While on GitHub go to the  a new Repo you would like to add to your profile. Look to the upper right side of the site and see a box labeled Fork.  Please click the Fork(the word not the utensil), then pick your profile and Snap you should have the repo in no time.
+
+Clone From GitHub to Git: In the lower right side of you screen on GitHub you should see a box with a URL in it that says Clone. Copy the URL that is below and head back over to your Terminal. Once you are in the terminal run pwd to see where you are at in the computer. If you need to move to a different area hit cd what ever directory. Once you are in the file you want to add the repo to please  run git clone http://github.com/whateverneame (Links to an external site.) (paste the URL needed) and Snap you are done.
+
+The fork method is ideal because it lets you take an existing repo and add it to your account and then to your computer. This will grant you access to make contributions or start working on something new. Or you could always start from scratch if you like.
+
+I struggled a bit with where I should be cloning the new repos. After watching the video I thought we had to create a few directories and place the new repos inside them, but this was not the goal of the exercise. I placed the two new repos in my main directory.
