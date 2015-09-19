@@ -5,10 +5,10 @@
 Wireframe can be seen as the blueprint design for you website. It is the 30,000ft view of the layout and interaction of your website free of distraction such as color, fonts, and pictures. Wireframes can be made by using wireframing software tools like gliffy(which I used and disliked) or just simple free hand sketches.
 
 ##What are the benefits of wireframing?
-*Avoids Tunnel Vision
-*Saves Money
-*Increases Effectiveness and Use Ability
-*Making Design Changes Effortless
+1. Avoids Tunnel Vision
+2. Saves Money
+3. Increases Effectiveness and Use Ability
+4. Making Design Changes Effortless
 
 ##Did you enjoy wireframing your site?
 Yes and No! I have always wanted to be more creative and this gave me an opportunity to use parts of my brain I have not used in years.  The reason I did not like wireframing the site was due to the tool I used Gilffy. In the interest of saving time I Gliffy because it was on our reading requirements and it is suggested as a top free 10 pick. It lagged very badly and it took me way longer than it should have to finish my layouts.
