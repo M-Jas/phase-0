@@ -22,3 +22,4 @@ How detailed should this be? How can I make mine different?  I used our reading 
 
 ##Which parts of the challenge did you enjoy and which parts did you find tedious?
 I really enjoyed the opportunity to brainstorm and draw about what my site is going to look like. Nothing was to tedious, but I can see how someone could get sucked into a rabbit hole.
+
