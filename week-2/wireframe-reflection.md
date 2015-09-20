@@ -1,5 +1,5 @@
-![Alt text] (img/wireframe-index.png)
-![Alt text] (img/wireframe-blog-index.png)
+![Alt text](imgs/wireframe-index.png)
+![Alt text](imgs/wireframe-blog-index.png)
 
 ##What is a wireframe?
 Wireframe can be seen as the blueprint design for you website. It is the 30,000ft view of the layout and interaction of your website free of distraction such as color, fonts, and pictures. Wireframes can be made by using wireframing software tools like gliffy(which I used and disliked) or just simple free hand sketches.
