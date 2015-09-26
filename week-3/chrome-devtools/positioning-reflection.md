@@ -24,4 +24,4 @@ You can edit and select the descriptors that influence the layout of elements. Y
 Margin: is the space around the element as a whole. Border: is the edge of that element or the barrier wall keeping the content in. Padding is the gap/space between the element(content)  and the border.
 
 ###What was your impression of this challenge overall? (love, hate, and why?)
-I love the Chrome DevTools after I figured out how to move all the contents on accident. As I stated before I really need help with the Ideas of Positioning. this is going to save me a great deal of time and it is cool.
+I love the Chrome DevTools after I figured out how to move all the contents on accident. Around the 4th img the project got harder to place the elements, and two later we figured out how to move the elements. We could have changed the ones that did not look good, but I wanted to show the progess that happen.As I stated before I really need help with the Ideas of Positioning. this is going to save me a great deal of time and it is cool.
