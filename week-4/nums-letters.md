@@ -1,3 +1,10 @@
+
+https://github.com/Michael-Jas/phase-0/blob/master/week-4/defining-variables.rb
+
+https://github.com/Michael-Jas/phase-0/blob/master/week-4/basic-math.rb
+
+https://github.com/Michael-Jas/phase-0/blob/master/week-4/simple-string.rb
+
 ##What does puts do?
 Puts String(puts): only prints(gives) the output and adds a new line on the console.
 
