@@ -4,7 +4,6 @@ last_name="Jasinski"
 
 age= 28
 
-
 describe 'first_name' do
   it "is defined as a local variable" do
     expect(defined?(first_name)).to eq 'local-variable'
