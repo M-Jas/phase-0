@@ -24,3 +24,28 @@ minutes_in_decade = [8760*60*10]
 
 puts minutes_in_decade
 '''
+____________________________________
+##4.2 Reflection
+
+###How does Ruby handle addition, subtraction, multiplication, and division of numbers?
+
+It handles these  like a simplified calculator.  Addition +  Subtraction - Multiplication * and Division /. As I said it is a simplified is like a calculator so do use commas, it will screw with the computer like Y2K did.
+
+###What is the difference between integers and floats?
+An integer is going to be any number that does not have a decimal point in it. Floats will be the exact opposite, and will have decimals. Integers 8 -3330 137     Floats 8.88888 28.2 3.1444444444
+
+###What is the difference between integer and float division?
+
+Integer division will round down to give you a nearest whole number, while float division will be more exact and use decimals in the numbers.
+
+###What are strings? Why and when would you use them?
+
+String is a grouping of letters/numbers/symbols/punctuation and even empty one ' '  in programing. We would use strings for setting up variables. Stings will be inside ''. EX 'I like cake'  'where is my puppy' '12 '
+
+###What are local variables? Why and when would you use them?
+
+Local variables are when we store a string to the computers memory for later use. We use these because we would be able to call the variable name and get the input without typing the string all the way out again. EX my_dog= 'Tortellini the puppy'
+
+###How was this challenge? Did you get a good review of some of the basics?
+
+The challenge was a good base level for us to start with. I would have changed the directions a bit they were confusing.  I had some issues with rspec  because I made a loop by not creating an integer correctly an my terminal looked crazy.
