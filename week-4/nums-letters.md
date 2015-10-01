@@ -17,18 +17,27 @@ The difference is that an integer will round down to a whole number, while the f
 A float would say the average family has something like 2.4 child per household. There would be little Billy, Sally, and then there is Carl who is only .4 of a person. That does not sound right or fair... Use the interger and say there is 2 kids per household. (I heard this in a movie please dont think I am crazy)
 
 _____________________________________
+
 '''
 puts 365*24
+'''
+
+'''
 puts 8760*60*10
 '''
 
 '''
 hour_in_year = (365*24)
-
+'''
+'''
 puts hour_in_year
+'''
 
+'''
 minutes_in_decade = [8760*60*10]
+'''
 
+'''
 puts minutes_in_decade
 '''
 ____________________________________
