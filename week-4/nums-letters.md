@@ -18,28 +18,26 @@ A float would say the average family has something like 2.4 child per household.
 
 _____________________________________
 
-'''
+```
 puts 365*24
-'''
-
-'''
-puts 8760*60*10
-'''
-
-'''
+```
+```
 hour_in_year = (365*24)
-'''
-'''
+```
 puts hour_in_year
-'''
+```
 
-'''
+```
+puts 8760*60*10
+```
+```
 minutes_in_decade = [8760*60*10]
-'''
-
-'''
+```
+```
 puts minutes_in_decade
-'''
+```
+
+
 ____________________________________
 ##4.2 Reflection
 
