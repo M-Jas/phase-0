@@ -10,16 +10,16 @@
 # This error was analyzed in the README file.
 # --- error -------------------------------------------------------
 
-#def cartman_hates(thing)
- # if true
-  #  puts "What's there to hate about #{thing}?"
-#end
- # if false
-  #  puts "this is annoying"
-  #end
-#end
+def cartman_hates(thing)
+  if true
+    puts "What's there to hate about #{thing}?"
+end
+  if false
+    puts "this is annoying"
+  end
+end
 
-#p cartman_hates('people')
+p cartman_hates('people')
 
 # This is a tricky error. The line number may throw you off.
 
@@ -38,8 +38,8 @@
 
 # --- error -------------------------------------------------------
 
-#def south_park
-#end
+def south_park
+end
 
 # 1. What is the line number where the error occurs?
 # 41
@@ -54,8 +54,8 @@
 
 # --- error --------------------------------ß-----------------------
 
-#def cartman(jerk)
-#end
+def cartman(jerk)
+end
 
 # 1. What is the line number where the error occurs?
 # 57
@@ -70,11 +70,11 @@
 
 # --- error -------------------------------------------------------
 
-#def cartmans_phrase(yell)
- # puts "I'm not fat; I'm big-boned!"
-#end
+def cartmans_phrase(yell)
+  puts "I'm not fat; I'm big-boned!"
+end
 
-#cartmans_phrase('I hate Kyle')
+cartmans_phrase('I hate Kyle')
 
 # 1. What is the line number where the error occurs?
 # 74
@@ -89,11 +89,11 @@
 
 # --- error -------------------------------------------------------
 
-#def cartman_says(offensive_message)
+def cartman_says(offensive_message)
   #puts offensive_message
-#end
+end
 
-#cartman_says('A$$ hat')
+cartman_says('A$$ hat')
 
 
 
@@ -110,10 +110,10 @@
 
 # --- error -------------------------------------------------------
 
-#def cartmans_lie(lie, name)
-  #puts "#{lie}, #{name}!"
-#end
-#cartmans_lie('A meteor the size of the earth is about to hit Wyoming!', 'he is a skinny buff dude')
+def cartmans_lie(lie, name)
+  puts "#{lie}, #{name}!"
+end
+cartmans_lie('A meteor the size of the earth is about to hit Wyoming!', 'he is a skinny buff dude')
 
 
 # 1. What is the line number where the error occurs?
@@ -129,7 +129,7 @@
 
 # --- error -------------------------------------------------------
 
- #"Respect my authoritay!" * 5
+ "Respect my authoritay!" * 5
 
 # 1. What is the line number where the error occurs?
 #132
@@ -144,7 +144,7 @@
 
 # --- error -------------------------------------------------------
 
-#amount_of_kfc_left = 20/0.to_f
+amount_of_kfc_left = 20/0.to_f
 
 
 # 1. What is the line number where the error occurs?
@@ -160,7 +160,7 @@
 
 # --- error -------------------------------------------------------
 
-#require_relative "cartmans_essay.md"
+require "cartmans_essay.md"
 
 # 1. What is the line number where the error occurs?
 #163
@@ -177,7 +177,8 @@
 # --- REFLECTION -------------------------------------------------------
 # Write your reflection below as a comment.
 
-#Which error was the most difficult to read?
-#How did you figure out what the issue with the error was?
-#Were you able to determine why each error message happened based on the code?
-#When you encounter errors in your future code, what process will you follow to help you debug?
+#Which error was the most difficult to read? wrong amount of argument (1 for 2) I am jsut having issues with the arguments calling, I think.
+#How did you figure out what the issue with the error was? Well there was two arguments need and we needed to add one.
+
+#Were you able to determine why each error message happened based on the code? Yeah ruby is very easy to read and understand on this.
+#When you encounter errors in your future code, what process will you follow to help you debug? Step by step file_name/line/type/additional_info/where_is_error/why_did_we_get-it
