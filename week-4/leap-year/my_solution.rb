@@ -15,10 +15,10 @@
 def leap_year?(int)
   if int%4 == 0 && int%100 == 0 && int%400 == 0
     p true
-  elsif int%4 == 0
+  elsif int%4 == 0 && int%100 != 0
     p true
-  elsif int%100 == 0 && int%400 == 0
-    p true
+  #elsif int%100 == 0 && int%400 == 0
+   # p true
   else
     p false
   end
