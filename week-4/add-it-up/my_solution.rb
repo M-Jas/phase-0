@@ -4,7 +4,7 @@
 # include it in this file. Also make sure everything that isn't code
 # is commented in the file.
 
-# I worked on this challenge with: Michael Jewsinski.
+# I worked on this challenge with: Dan Woznicki.
 
 # 0. total Pseudocode
 # make sure all pseudocode is commented out!
@@ -34,7 +34,11 @@ end
 
 # 3. total refactored solution
 
+def total(array)
 
+array.inject { |sum, n| sum + n }
+
+end
 
 # 4. sentence_maker pseudocode
 # make sure all pseudocode is commented out!
