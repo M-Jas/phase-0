@@ -17,26 +17,31 @@
 
 def smallest_integer(list_of_nums)
   #if imput of the arry is empty nil
-   list_of_nums == nil
+  if list_of_nums.length == 0
     return nil
+  elsif list_of_nums.length == 1
+      return list_of_nums[0]
+  else
+    counter = list_of_nums[0]
+    range = list_of_nums.length -1
+    for integer in 0..range
+      if counter < list_of_nums[integer]
+        counter = list_of_nums[integer]
+      end
+    end
+    counter
+  end
    #make a counter for the while loop
-  counter = 1
-  x = 0
-  while list_of_nums < x
-
-  end
-
-
-    else
-
-   # each nums > x
-    # p x
-  end
-x += 1
-
 end
 
-end
+
+
+  # while list_of_nums < x
+
+  #  counter = counter + [x]
+  # end
+
+
 
 
 
@@ -50,17 +55,17 @@ end
 # end
 
 
-    #I spelled the method wrong
-  def smallest_integer(nums)
-    #the input array empty put nil
-    min = nil
-    #each number needs to check and see smallest
-    nums.each do |x|
-    # x will do what comes next
-    if min.nil? || min > x
-    #x will be less min
-    min = x
-  end
-end
-  min
+#     #I spelled the method wrong
+#   def smallest_integer(nums)
+#     #the input array empty put nil
+#     min = nil
+#     #each number needs to check and see smallest
+#     nums.each do |x|
+#     # x will do what comes next
+#     if min.nil? || min > x
+#     #x will be less min
+#     min = x
+#   end
+# end
+#   min
 
