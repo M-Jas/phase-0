@@ -1,7 +1,7 @@
 # Smallest Integer
 
 # I worked on this challenge [by myself, with: ].
-  #by myself
+
 # smallest_integer is a method that takes an array of integers as its input
 # and returns the smallest integer in the array
 #
@@ -12,6 +12,34 @@
 
 # Your Solution Below
 
+
+
+
+def smallest_integer(list_of_nums)
+  #if imput of the arry is empty nil
+   list_of_nums == nil
+    return nil
+   #make a counter for the while loop
+  counter = 1
+  x = 0
+  while list_of_nums < x
+
+  end
+
+
+    else
+
+   # each nums > x
+    # p x
+  end
+x += 1
+
+end
+
+end
+
+
+
 #   #get the smallest num of the int
 #   # the nums < other numner
 #   # arry empty = nill
@@ -20,6 +48,7 @@
 #   return nil
 #   end
 # end
+
 
     #I spelled the method wrong
   def smallest_integer(nums)
@@ -34,14 +63,4 @@
   end
 end
   min
-end
-
-#Refactor
-
- def smallest_integer(nums)
-  #if smallest nums == nil
-    #print nil
-  #elsif each nums = nil
-
-  #elsif each nums is > larger then x
 
