@@ -14,6 +14,7 @@
 
 
 
+
 def smallest_integer(list_of_nums)
   #if imput of the arry is empty nil
    list_of_nums == nil
@@ -38,7 +39,17 @@ end
 end
 
 
-refactor
+
+#   #get the smallest num of the int
+#   # the nums < other numner
+#   # arry empty = nill
+# if
+#   list_of_nums == [0]
+#   return nil
+#   end
+# end
+
+
     #I spelled the method wrong
   def smallest_integer(nums)
     #the input array empty put nil
@@ -52,4 +63,4 @@ refactor
   end
 end
   min
-end
+
