@@ -10,9 +10,6 @@
 #
 # If +list_of_nums+ is empty the method should return nil
 
-# Your Solution Below
-
-
 #get the smallest num of the int
 # the nums < other numner
 # arry empty = nill
@@ -34,11 +31,11 @@ def smallest_integer(list_of_nums)
     return nil
   else
      list_of_nums.each do |value|
-      if list_of_nums[0] > value
-        list_of_nums[0] = value
+      if list_of_nums[x] > value
+        list_of_nums[x] = value
       end
     end
-    list_of_nums[0]
+    list_of_nums[x]
   end
 end
 
