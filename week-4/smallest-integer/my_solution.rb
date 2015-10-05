@@ -1,6 +1,6 @@
 # Smallest Integer
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself for 12 hours].
 
 # smallest_integer is a method that takes an array of integers as its input
 # and returns the smallest integer in the array
@@ -13,59 +13,54 @@
 # Your Solution Below
 
 
+#get the smallest num of the int
+# the nums < other numner
+# arry empty = nill
+
+# def smallest_integer(list_of_nums)
+#   #if imput of the arry is empty nil
+#   if list_of_nums.length == 0
+#     return nil
+#   elsif list_of_nums.length == 1
+#       return list_of_nums[0]
+#   else
+#     for list_of_nums.each do |x|
+#       if list_of_nums[0] < list_of_nums[x]
+#          list_of_nums[0] = list_of_nums[x]
 
 
 def smallest_integer(list_of_nums)
-  #if imput of the arry is empty nil
   if list_of_nums.length == 0
     return nil
-  elsif list_of_nums.length == 1
-      return list_of_nums[0]
   else
-    counter = list_of_nums[0]
-    range = list_of_nums.length -1
-    for integer in 0..range
-      if counter < list_of_nums[integer]
-        counter = list_of_nums[integer]
+     list_of_nums.each do |value|
+      if list_of_nums[0] > value
+        list_of_nums[0] = value
       end
     end
-    counter
+    list_of_nums[0]
   end
-   #make a counter for the while loop
 end
 
 
 
-  # while list_of_nums < x
 
-  #  counter = counter + [x]
-  # end
+#--------------------------------------------------------------
 
 
 
-
-
-#   #get the smallest num of the int
-#   # the nums < other numner
-#   # arry empty = nill
-# if
-#   list_of_nums == [0]
-#   return nil
-#   end
-# end
-
-
-#     #I spelled the method wrong
-#   def smallest_integer(nums)
-#     #the input array empty put nil
-#     min = nil
-#     #each number needs to check and see smallest
-#     nums.each do |x|
+def smallest_integer(nums)
+     min = nil
+  nums.each do |x|
+    if min.nil? || min > x
+      min = x
+    end
+  end
+    min
+end
+#The input array empty put nil
+#each number needs to check and see smallest
 #     # x will do what comes next
-#     if min.nil? || min > x
+
 #     #x will be less min
-#     min = x
-#   end
-# end
-#   min
 
