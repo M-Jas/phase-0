@@ -17,18 +17,18 @@
 #INPUT:A list of words "strings"
 #OUTPUT: The shortest string
 
-# def shortest_string(list_of_words)
-#   if list_of_words == []
-#     return nil
-#   end
-#   else
-#     list_of_words.each do |x| #telling each word in the array to do x
-#      if list_of_words[''] > x
-#         list_of_words[''] == x
-#      end
-#   end
-#     list_of_words
-# end
+def shortest_string(list_of_words)
+  if list_of_words == []
+    return nil
+  end
+  else
+    list_of_words.each do |x| #telling each word in the array to do x
+     if list_of_words[''] > x
+        list_of_words[''] == x
+     end
+  end
+    list_of_words
+end
 # i either get no implicit conversion of String into Integer for this
 #if I take [''] out I get > as a undifiend method.
 
