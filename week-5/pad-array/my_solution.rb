@@ -19,13 +19,36 @@
 
 
 # 1. Initial Solution
-def pad!(array, min_size, value = nil) #destructive
-  # Your code here
-end
+# def pad!(array, min_size, value = nil)
+#   if array.length >= min_size
+#     return array
+
+#   end
+#   dif = min_size - array.length
+#    dif.times do
+#     array.push value
+
+#   end
+#     return array
+
+#   end
+#  pad!([1, 3, 5], 5)
 
 def pad(array, min_size, value = nil) #non-destructive
-  # Your code here
-end
+   if array.length >= min_size
+     return array
+
+
+  end
+  dif = min_size - array.length
+   dif.times do
+    new_ray = Array.new(dif) #{|x| x = value }
+
+  end
+    return new_ray
+
+  end
+pad([1, 3, 5], 5)
 
 
 # 3. Refactored Solution
