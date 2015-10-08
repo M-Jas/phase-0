@@ -37,18 +37,15 @@
 def pad(array, min_size, value = nil) #non-destructive
    if array.length >= min_size
      return array
-
-
   end
-  dif = min_size - array.length
-   dif.times do
-    new_ray = Array.new(dif) #{|x| x = value }
-
+  new_array = array.clone
+  dif = min_size - new_array.length
+  dif.times do
+    new_array.push(value)
   end
-    return new_ray
-
-  end
-pad([1, 3, 5], 5)
+  return new_array
+end
+# pad([1, 3, 5], 5)
 
 
 # 3. Refactored Solution
