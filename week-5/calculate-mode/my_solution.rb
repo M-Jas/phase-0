@@ -2,7 +2,7 @@
 
 # I worked on this challenge [Worked with Michael J and James K ]
 
-# I spent [] hours on this challenge.
+# I spent [3] hours on this challenge.
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
@@ -42,30 +42,9 @@ def mode(array)
 end
 array = [1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 5]
 mode (array)
-# mode(array)
-#     look to see if the current item is equal to temp
-#     if it is then we know to add 1 more onto the current count for that number
-#     for example, if 1 is the current number set as temp
-#       and 1 is item, then we can increment count by 1
-#     if item = temp
-#       count += 1
-#     else
-# #       if the count of the current number is higher than the old highest, make it the new highest
-#       if count >= curr_hig
-#         curr_hig = temp
-#       end
-# #       now we want to reset the count and make the new item we are checking into our temporary
-#       count = 0
-#       temp = item
-#     end
-#   end
-#   temp.push (curr_hig)
-# end
 
 
-
-
-
+# First_Trial__________________________________________________
 # def mode(array)
 #   # temp = 0
 #   curr_hig = 0
@@ -77,9 +56,12 @@ mode (array)
 #   return curr_hig
 # end
 
-# 3. Refactored Solution
+# 3. Refactored Solution______________________________________
+def mode (array)
+  array.each_with_object(Hash.new(0)){|item, numbers| numbers[item] += 1}
 
-
-
-
+  biggest_array = numbers.values.sort!.last
+  numbers.delete_if {|key, value| value < biggest_array}
+  numbers.keys
+end
 # 4. Reflection
