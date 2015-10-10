@@ -5,9 +5,14 @@
 # I spent [] hours on this challenge.
 
 # 0. Pseudocode
+# Create a class that is Die
+# This clas represents and object that rolls a die
+# We want the die to have six sides.
+# if rolled it produces a random number from 1-6.
+# If number is less then 1 there is an argument.
 
-# Input:
-# Output:
+# Input:Takes an array of with a range 1-6
+# Output:will produce a random number with in range
 # Steps:
 
 
@@ -15,19 +20,26 @@
 
 class Die
   def initialize(sides)
-    # code goes here
+     if sides < 1
+      raise ArgumentError.new("Number can't be less than 1")
+      else
+      @sides = sides
+    end
   end
 
   def sides
-    # code goes here
+    @sides
+
   end
 
-  def roll
-    # code goes here
+  def roll #This will rol the die to produce a rand number
+    @roll = rand(1..@sides)
+    return @roll
   end
+
 end
 
-
+die = Die.new(6)
 
 # 3. Refactored Solution
 
