@@ -18,5 +18,16 @@ end
 p acc_group(copperheads)
 
 # Refactor Solution_____________________________________________________________
+# The solution I used in the above problem is a great example of a refractor solution. I figure I could use this beacuse it was in part of our reading. I did not know it could solve the entire solution in one line.
+
 
 # Reflection____________________________________________________________________
+
+# What was the most interesting and most difficult part of this challenge?
+#   I think is was crazy this I figured this out from the Rubyist. This book is hit or miss but Ch 10 was helpful with the challenges this week. After I did this one I was not able to do a full iteration. My brain did not want to think of any other answers.
+# Do you feel you are improving in your ability to write pseudocode and break the problem down?
+#   This exercise was not the best example of it beacuse I had a hunch on how to solve the problem.
+# Was your approach for automating this task a good solution? What could have made it even better?
+#   I wish I could have broke it down bit by bit to solve the long way.
+# What data structure did you decide to store the accountability groups in and why? Array, because there is only index spots for the mates. It was easier to interate over that.
+# What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods? each_slice and each_cons. each_slice is going to be my go to for bunching groups of people. I am not sure why I would use each_cons, beacuse the output is some what repeative.
