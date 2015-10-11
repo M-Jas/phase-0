@@ -52,3 +52,10 @@ end
 die = Die.new(6)
 
 # 4. Reflection___________________________________________________________________
+# What is an ArgumentError and why would you use one?
+#   Raising the ArgumentError will stop the execution of the program beacuse the method is doing something it should not. The program will exit or ask you to make the changes.
+# What new Ruby methods did you implement? What challenges and successes did you have in implementing them? attr_reader: is another way for us to refator some of the code. instance variables were neat. They let is set a value to the initialize argument that would run with the program.
+# What is a Ruby class? Class is a way that you can group behaviors (methods) under one umbrella that will work with eachother. Method to Method collaboration.
+# Why would you use a Ruby class? Because everything in ruby is either an object or a construct that evaluates an object, and all objects are a instance of some class.
+# What is the difference between a local variable and an instance variable? instance variables only are visable to the object to which they belong.
+# Where can an instance variable be used?They can be used by any methods defined in the class.
