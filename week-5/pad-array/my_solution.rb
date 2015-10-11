@@ -22,39 +22,38 @@ def pad!(array, min_size, value = nil)
     return array
   end
   dif = min_size - array.length
-    dif.times do
-      array.push value
+  dif.times do
+    array.push value
   end
-    return array
-  end
- #pad!([1, 3, 5], 5)
+  return array
+end
+#  #pad!([1, 3, 5], 5)
 #Non-destructive_______________________________________________________________________
 def pad(array, min_size, value = nil)
-   if array.length >= min_size
-     return array
-  end
-  new_array = array.clone
+  new_array = []
+  new_array.concat(array)
   dif = min_size - new_array.length
-    dif.times do
-      new_array.push(value)
+  dif.times do
+     new_array.push(value)
   end
   return new_array
 end
-# pad([1, 3, 5], 5)
+ # pad([1, 3, 5], 5)
 
 
 # 3. Refactored Solution_______________________________________________________________
 # If the minimum size is less than or equal to the length of the array, it should just return the array.
 # That is, pad([1,2,3], 3) should return [1,2,3].
 
-def pad(array, min_size, value = nil)
-  if array.length >= min_size
-    return array
-  (min_size - array.length).each.inject{|value, array| array << value }
+def pad!(array, min_size, value = nil)
+  dif = min_size - array.length
+  dif.times do
+    array.push value
   end
-    return array
+  return array
 end
-  p pad!([1, 3, 5], 5)
+# end
+#   p pad!([1, 3, 5], 5)
 
 # 4. Reflection
 # Were you successful in breaking the problem down into small steps?
