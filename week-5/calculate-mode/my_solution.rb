@@ -64,4 +64,13 @@ def mode (array)
   numbers.delete_if {|key, value| value < biggest_array}
   numbers.keys
 end
-# 4. Reflection
+# 4. Reflection_____________________________________________________________
+# Which data structure did you and your pair decide to implement and why?
+#   At first we took the Array route and figured out that we will need to have values for the occurances of the numbers or keys.
+# Were you more successful breaking this problem down into implementable pseudocode than the last with a pair?
+#   This was the first time that it rally worked for me. It really started to click. Not a full out light buld moment, but close. I started to see how the pseudocode could translate.
+# What issues/successes did you run into when translating your pseudocode to code?
+#     My peer really showed me how to break down the pseudocode. I was just doing these quick snips that were to big and did not break down the proplem.
+
+# What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
+#   We compressed the code with the each_with_object method. I am finding it easier to do the blocks on one line, it makes way more sense to me.
