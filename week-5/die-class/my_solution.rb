@@ -2,7 +2,7 @@
 
 # I worked on this challenge [by myself ]
 
-# I spent [] hours on this challenge.
+# I spent [2.5] hours on this challenge.
 
 # 0. Pseudocode
 # Create a class that is Die
@@ -15,38 +15,40 @@
 # Output:will produce a random number with in range
 # Steps:
 
-
-# 1. Initial Solution
-
+# 1. Initial Solution___________________________________________________________
 class Die
   def initialize(sides)
-     if sides < 1
+    if sides < 1
       raise ArgumentError.new("Number can't be less than 1")
-      else
+    else
       @sides = sides
     end
   end
-
   def sides
     @sides
-
   end
-
   def roll #This will rol the die to produce a rand number
     @roll = rand(1..@sides)
     return @roll
   end
-
 end
-
 die = Die.new(6)
 
-# 3. Refactored Solution
+# 3. Refactored Solution______________________________________________________
+class Die
+  attr_reader :sides
+  def initialize(sides)
+    if sides < 1
+      raise ArgumentError.new("Number can't be less than 1")
+    else
+      @sides = sides
+    end
+  end
+  def roll
+    @roll = rand(1..@sides)
+    return @roll
+  end
+end
+die = Die.new(6)
 
-
-
-
-
-
-
-# 4. Reflection
+# 4. Reflection___________________________________________________________________
