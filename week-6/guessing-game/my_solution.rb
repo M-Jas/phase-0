@@ -48,4 +48,17 @@ This answer is very dry as it is.
 
 
 
-# Reflection
+# Reflection___________________________________________________________________________________________
+
+# How do instance variables and methods represent the characteristics and behaviors (actions) of a real-world object?
+
+# When should you use instance variables? What do they do for you? Instance variables are objects of the
+  #class and as the variable. They can be used troughout the class as a variable to hold a value.
+
+# Explain how to use flow control. Did you have any trouble using it in this challenge? If so, what did you struggle with? Here we are going to use if statements to addres if the person has guessed correctly.
+  #I had issues with the method for solved because in guess I had @guess == solved. just a small flow
+  # error. It was asking if guess was solved, but what is the answer? I needed to bring that down from
+  # guess
+
+# Why do you think this code requires you to return symbols? What are the benefits of using symbols?
+  # We are assigning a object id which which is imutable and cant be changed.
