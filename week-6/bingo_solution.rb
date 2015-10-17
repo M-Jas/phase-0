@@ -35,7 +35,7 @@ class BingoBoard
     p @bingo_letter.sample
   end
   def next_number
-    p @next_number = rand(1..99)
+    p @next_number = rand(21..23)
   end
   def bingo_ball
     @aaa = next_letter
@@ -48,7 +48,7 @@ class BingoBoard
    def user_card_numbers
     @bingo_board.map{|index| p index }
   end
-end
+
 #Check the board______________________________________________________________
 #Create a method Check the card
 #method will test if letter and number match in the same column
@@ -56,7 +56,18 @@ end
 # if the card has letter
 # then check if number falls under the column by iterating over specific index
 
-#DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
+  def finder
+    # col = 0
+    # j = @bbb
+    if @bingo_letter[0] == @aaa
+     @bingo_board[0].include?(@bbb)  #if column index 0 incld the next number print
+      p true
+    else
+      p false
+    end
+  end
+end
+#DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE____________________________
 board =  [[47, 44, 71, 8, 88],
           [22, 69, 75, 65, 73],
           [83, 85, 97, 89, 57],
@@ -71,6 +82,7 @@ new_game = BingoBoard.new(board)
 # p new_game.next_number
 # p "And the next ball number is #{new_game.bingo_ball}".to_s
 new_game.bingo_ball
+new_game.finder
 new_game.user_card_letters
 new_game.user_card_numbers
 
