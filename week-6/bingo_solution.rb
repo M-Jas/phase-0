@@ -26,37 +26,25 @@
   #Print the new to the console so it lays out like a board.. remove the brackets.
 
 # Initial Solution
-
 class BingoBoard
 
   def initialize(board)
     @bingo_board = board
-
-  end
-
-end
-
-class Call
-
-  def initialize(board_letter, board_number)
-    @letter = board_letter
-    @number = board_number
+    @bingo_letter = ['B', 'I', 'N', 'G', 'O']
   end
   def next_letter
-     @letter.sample
+    p @bingo_letter.sample
   end
   def next_number
-     @number
-   end
-
+    p @next_number = rand(1..99)
+  end
+  def bingo_ball
+    @aaa = next_letter
+    @bbb = next_number
+#     @bingo_ball = @bingo_letters @next_number
+  end
 end
 
-# class Check
-#   def initialize
-#     @bingo_board = BingoBoard.new
-
-
-#____________________________________________________________
 #DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
 board =  [[47, 44, 71, 8, 88],
           [22, 69, 75, 65, 73],
@@ -64,15 +52,14 @@ board =  [[47, 44, 71, 8, 88],
           [25, 31, 96, 68, 51],
           [75, 70, 54, 80, 83]]
 
-board_letter = ['B', 'I', 'N', 'G', 'O']
-board_number = rand(1..99)
+# letter_opt = ['B', 'I', 'N', 'G', 'O'].sample
+# numbers = rand(1..99)
 
 new_game = BingoBoard.new(board)
- p new_game.
-#this is going to select the next letter for the game
-new_ball = Call.new(board_letter, board_number)
-p new_ball.next_letter
-p new_ball.next_number
+# p new_game.next_letter
+# p new_game.next_number
+new_game.bingo_ball
+
 
 
 
