@@ -2,7 +2,6 @@
 
 # I spent [#] hours on this challenge.
 
-
 # Release 0: Pseudocode
 # Outline:
 
@@ -41,9 +40,21 @@ class BingoBoard
   def bingo_ball
     @aaa = next_letter
     @bbb = next_number
-#     @bingo_ball = @bingo_letters @next_number
+  end
+#Display for Users Bingo Card_________________________________________________
+   def user_card_letters
+     p @bingo_letter
+   end
+   def user_card_numbers
+    @bingo_board.map{|index| p index }
   end
 end
+#Check the board______________________________________________________________
+#Create a method Check the card
+#method will test if letter and number match in the same column
+# does card have the letter called... it better have
+# if the card has letter
+# then check if number falls under the column by iterating over specific index
 
 #DRIVER CODE (I.E. METHOD CALLS) GO BELOW THIS LINE
 board =  [[47, 44, 71, 8, 88],
@@ -58,7 +69,10 @@ board =  [[47, 44, 71, 8, 88],
 new_game = BingoBoard.new(board)
 # p new_game.next_letter
 # p new_game.next_number
+# p "And the next ball number is #{new_game.bingo_ball}".to_s
 new_game.bingo_ball
+new_game.user_card_letters
+new_game.user_card_numbers
 
 
 
