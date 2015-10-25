@@ -17,4 +17,5 @@
 // _________________________________________________________
 
 // All of our test were up and running on the first try. It looks like our peer collaboration and attention
-//  to detail truly paid off. Each step of this exercise was going to play off the last one. Once we had one opperating we could use it as a blue print for the next test.
+  //  to detail truly paid off. Each step of this exercise was going to play off the last one.
+  // Once we had one opperating we could use it as a blue print for the next test.
