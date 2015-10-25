@@ -14,3 +14,7 @@
 
 // 8)The first median(middle) number we are trying to find is based on an odd amount of individual numbers in the First group.
 // 9)The second median(middle)  number we are trying to find is based on an odd amount of individual numbers in the Second group.
+// _________________________________________________________
+
+// All of our test were up and running on the first try. It looks like our peer collaboration and attention
+//  to detail truly paid off. Each step of this exercise was going to play off the last one. Once we had one opperating we could use it as a blue print for the next test.
