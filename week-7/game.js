@@ -30,126 +30,215 @@
 // };
 
 // object
-var players = {
-  array:[],
-  user_score: 0,
+// var players = {
+//   array:[],
+//   user_score: 0,
 
- };
+//  };
 
-// Game Object
-var game = {
-  machine: Math.floor((Math.random()*2)+1),
-  total_guesses:[],
-  gameOn: false // Loop over until user score reaches five. then announce winner //  while (game.gameOn)// while(players.user_score < 5){
-};
+// // Game Object
+// var game = {
+//   machine: Math.floor((Math.random()*2)+1),
+//   total_guesses:[],
+//   gameOn: false // Loop over until user score reaches five. then announce winner //  while (game.gameOn)// while(players.user_score < 5){
+// };
 
-// Potential object props
-var miss_score = 0;
-var correct_score = 0;
+// // Potential object props
+// var miss_score = 0;
+// var correct_score = 0;
 
-  function user_guess(num){
+//   function user_guess(num){
 
-    if(num === game.machine){
-       correct_score += 1;
-       console.log("Great Work");
-      console.log(endGame());
-    }
-//  see it just will not add and I have looked all day online
-    else if (num != game.machine){
+//     if(num === game.machine){
 //        correct_score += 1;
-        miss_score += 1;
-        console.log("Nope");
-        console.log(endGame());
-    }
-    else {
-      console.log("Fuck you game!!!");
-    } //lol! //worth a try or two
+//        console.log("Great Work");
+//       console.log(endGame());
+//     }
+// //  see it just will not add and I have looked all day online
+//     else if (num != game.machine){
+// //        correct_score += 1;
+//         miss_score += 1;
+//         console.log("Nope");
+//         console.log(endGame());
+//     }
+//     else {
+//       console.log("Fuck you game!!!");
+//     } //lol! //worth a try or two
 
-  };
+//   };
 
-    function endGame(){
+//     function endGame(){
 
-      if(correct_score === 5){
-        console.log("Fuck you I WIN ");
-      }
-      else if (miss_score === 5){
+//       if(correct_score === 5){
+//         console.log("Fuck you I WIN ");
+//       }
+//       else if (miss_score === 5){
 
-        console.log("Don't give up your day job ");
-      }
-      else if (miss_score + correct_score === 7){
-        console.log("Really suck bro");
-      }
-      else {
-        console.log("yeah");
-      };
-  };
+//         console.log("Don't give up your day job ");
+//       }
+//       else if (miss_score + correct_score === 7){
+//         console.log("Really suck bro");
+//       }
+//       else {
+//         console.log("yeah");
+//       };
+//   };
 
-// game.total_guesses.push(correct_score)
-user_guess(1)
-console.log("The Number is " + game.machine );
-console.log("You have guessed corectly " + (correct_score))// I want this
-console.log("I suck " + miss_score)
-console.log("                    ")
+// // game.total_guesses.push(correct_score)
+// user_guess(1)
+// console.log("The Number is " + game.machine );
+// console.log("You have guessed corectly " + (correct_score))// I want this
+// console.log("I suck " + miss_score)
+// console.log("                    ")
 
-user_guess(2)
-console.log("The Number is " + game.machine );
-console.log("You have guessed corectly " + (correct_score))
-console.log("I suck " + miss_score)
-console.log("                    ")
+// user_guess(2)
+// console.log("The Number is " + game.machine );
+// console.log("You have guessed corectly " + (correct_score))
+// console.log("I suck " + miss_score)
+// console.log("                    ")
 
-user_guess(2)
-console.log("The Number is " + game.machine );
-console.log("You have guessed corectly " + (correct_score))
-console.log("I suck " + miss_score)
-console.log("                    ")
-//
-user_guess(1)
-console.log("The Number is " + game.machine );
-console.log("You have guessed corectly " + (correct_score))
-console.log("I suck " + miss_score)
-console.log("                    ")
+// user_guess(2)
+// console.log("The Number is " + game.machine );
+// console.log("You have guessed corectly " + (correct_score))
+// console.log("I suck " + miss_score)
+// console.log("                    ")
+// //
+// user_guess(1)
+// console.log("The Number is " + game.machine );
+// console.log("You have guessed corectly " + (correct_score))
+// console.log("I suck " + miss_score)
+// console.log("                    ")
 
-user_guess(2)
-console.log("The Number is " + game.machine );
-console.log("You have guessed corectly " + (correct_score))
-console.log("I suck " + miss_score)
-console.log("                    ")
+// user_guess(2)
+// console.log("The Number is " + game.machine );
+// console.log("You have guessed corectly " + (correct_score))
+// console.log("I suck " + miss_score)
+// console.log("                    ")
 
-user_guess(1)
-console.log("The Number is " + game.machine );
-console.log("You have guessed corectly " + (correct_score))
-console.log("I suck " + miss_score)
-console.log("                    ")
-
-
-user_guess(1)
-console.log("The Number is " + game.machine );
-console.log("You have guessed corectly " + (correct_score))
-console.log("I suck " + miss_score)
-console.log("                    ")
+// user_guess(1)
+// console.log("The Number is " + game.machine );
+// console.log("You have guessed corectly " + (correct_score))
+// console.log("I suck " + miss_score)
+// console.log("                    ")
 
 
-user_guess(1)
-console.log("The Number is " + game.machine );
-console.log("You have guessed corectly " + (correct_score))
-console.log("I suck " + miss_score)
-console.log("                    ")
+// user_guess(1)
+// console.log("The Number is " + game.machine );
+// console.log("You have guessed corectly " + (correct_score))
+// console.log("I suck " + miss_score)
+// console.log("                    ")
 
-user_guess(1)
-console.log("The Number is " + game.machine );
-console.log("You have guessed corectly " + (correct_score))
-console.log("I suck " + miss_score)
-console.log("                    ")
 
-user_guess(1)
-console.log("The Number is " + game.machine );
-console.log("You have guessed corectly " + (correct_score))
-console.log("I suck " + miss_score)
-console.log("                    ")
+// user_guess(1)
+// console.log("The Number is " + game.machine );
+// console.log("You have guessed corectly " + (correct_score))
+// console.log("I suck " + miss_score)
+// console.log("                    ")
+
+// user_guess(1)
+// console.log("The Number is " + game.machine );
+// console.log("You have guessed corectly " + (correct_score))
+// console.log("I suck " + miss_score)
+// console.log("                    ")
+
+// user_guess(1)
+// console.log("The Number is " + game.machine );
+// console.log("You have guessed corectly " + (correct_score))
+// console.log("I suck " + miss_score)
+// console.log("                    ")
 
 
 // Refactored Code
 
+// object
+var player1 = {
+  array:[],
+  correctGuess: 0,
+  wrong: 0,
+};
+
+// Game Object
+var game = {
+  machine: Math.floor((Math.random()*2)+1),
+  kill:[],
+  gameOn: false // Loop over until user score reaches five. then announce winner //  while (game.gameOn)// while(players.user_score < 5){
+};
+
+
+ function user_guess(num){
+
+    if(num === game.machine){
+      player1.correctGuess += 1;
+      console.log(endGame());
+      console.log("Good Guess!!! Your score is " + player1.correctGuess);
+    }
+    else if (num != game.machine){
+      player1.wrong += 1;
+      console.log(endGame());
+      console.log("Nope! Wrong! I was thinking of " + game.machine);
+    }
+    else {
+      console.log("This should not happen");
+    }
+  };
+
+
+  function endGame(){
+    if(player1.correctGuess === 5){
+      console.log("YOU WIN ! YOU WIN ! YOU WIN ! YOU WIN !");
+    }
+    else if (player1.wrong === 5){
+      console.log("GAME OVER!!!!! Don't give up your day job ");
+    }
+    else if (player1.wrong + player1.correctGuess === 7){
+      console.log("Keep Playing");
+    };
+  };
+
+user_guess(1)
+console.log("Total for Correct " + player1.correctGuess)
+console.log("Total for Wrong " + player1.wrong)
+console.log("                    ")
+
+user_guess(1)
+console.log("Total for Correct " + player1.correctGuess)
+console.log("Total for Wrong " + player1.wrong)
+console.log("                    ")
+
+user_guess(1)
+console.log("Total for Correct " + player1.correctGuess)
+console.log("Total for Wrong " + player1.wrong)
+console.log("                    ")
+
+user_guess(2)
+console.log("Total for Correct " + player1.correctGuess)
+console.log("Total for Wrong " + player1.wrong)
+console.log("                    ")
+
+user_guess(2)
+console.log("Total for Correct " + player1.correctGuess)
+console.log("Total for Wrong " + player1.wrong)
+console.log("                    ")
+
+user_guess(1)
+console.log("Total for Correct " + player1.correctGuess)
+console.log("Total for Wrong " + player1.wrong)
+console.log("                    ")
+
+user_guess(1)
+console.log("Total for Correct " + player1.correctGuess)
+console.log("Total for Wrong " + player1.wrong)
+console.log("                    ")
+
+user_guess(2)
+console.log("Total for Correct " + player1.correctGuess)
+console.log("Total for Wrong " + player1.wrong)
+console.log("                    ")
+
+user_guess(1)
+console.log("Total for Correct " + player1.correctGuess)
+console.log("Total for Wrong " + player1.wrong)
+console.log("                    ")
 
 
 
