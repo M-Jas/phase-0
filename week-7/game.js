@@ -97,58 +97,9 @@
 // console.log("I suck " + miss_score)
 // console.log("                    ")
 
-// user_guess(2)
-// console.log("The Number is " + game.machine );
-// console.log("You have guessed corectly " + (correct_score))
-// console.log("I suck " + miss_score)
-// console.log("                    ")
-// //
-// user_guess(1)
-// console.log("The Number is " + game.machine );
-// console.log("You have guessed corectly " + (correct_score))
-// console.log("I suck " + miss_score)
-// console.log("                    ")
-
-// user_guess(2)
-// console.log("The Number is " + game.machine );
-// console.log("You have guessed corectly " + (correct_score))
-// console.log("I suck " + miss_score)
-// console.log("                    ")
-
-// user_guess(1)
-// console.log("The Number is " + game.machine );
-// console.log("You have guessed corectly " + (correct_score))
-// console.log("I suck " + miss_score)
-// console.log("                    ")
 
 
-// user_guess(1)
-// console.log("The Number is " + game.machine );
-// console.log("You have guessed corectly " + (correct_score))
-// console.log("I suck " + miss_score)
-// console.log("                    ")
-
-
-// user_guess(1)
-// console.log("The Number is " + game.machine );
-// console.log("You have guessed corectly " + (correct_score))
-// console.log("I suck " + miss_score)
-// console.log("                    ")
-
-// user_guess(1)
-// console.log("The Number is " + game.machine );
-// console.log("You have guessed corectly " + (correct_score))
-// console.log("I suck " + miss_score)
-// console.log("                    ")
-
-// user_guess(1)
-// console.log("The Number is " + game.machine );
-// console.log("You have guessed corectly " + (correct_score))
-// console.log("I suck " + miss_score)
-// console.log("                    ")
-
-
-// Refactored Code
+// Refactored Code_________________________________________________________________
 
 // object
 var player1 = {
@@ -166,7 +117,6 @@ var game = {
 
 
  function user_guess(num){
-
     if(num === game.machine){
       player1.correctGuess += 1;
       console.log(endGame());
@@ -181,8 +131,6 @@ var game = {
       console.log("This should not happen");
     }
   };
-
-
   function endGame(){
     if(player1.correctGuess === 5){
       console.log("YOU WIN ! YOU WIN ! YOU WIN ! YOU WIN !");
@@ -242,14 +190,17 @@ console.log("                    ")
 
 
 
+// Reflection______________________________________________________________________________________________
+//What was the most difficult part of this challenge?
+  // Making as MVP as possible. I left out some of the objectives and had to rethink this entire project.
+  // Also it was harder than expected because I was trying to be to creative and I am not there yet.
 
+// What did you learn about creating objects and functions that interact with one another?
+  // They are like instance variables and it made it a bit easier to stay organized.
 
-// Reflection
-//
-//
-//
-//
-//
-//
-//
-//
+// Did you learn about any new built-in methods you could use in your refactored solution?
+// If so, what were they  and how do they work?
+  // My game was very simple and I tried to use a few methods to stop the program and it would not work.
+
+// How can you access and manipulate properties of objects?
+  // If the object did not have any properties we could use prototype. IF you want to remove a property you can use delete method.
