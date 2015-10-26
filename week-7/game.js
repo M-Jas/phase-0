@@ -2,8 +2,8 @@
 
 // This is a solo challenge
 
-// Your mission description: King of The Hill(guessing game)
-// Overall mission: Keep your score above 0 and you will win.
+// Your mission description: First to Five correct Wins
+// Overall mission: Get 5 correct answer you win, 5 wrong ones and game over.
 // Goals: Pick a number between 1 and 2
 // Characters: Play1-user Player2-computer
 // Objects: Play1-user Player2-computer
@@ -15,13 +15,12 @@
 //Create and object that is for the computer.
 //Both objects will have a property for points.
 //Function will be outside of the objects to be used globally.
-//Function1- will take the palyers guess and see if it matches the random number either 1 or 2.
+//Function1- will take the players guess and see if it matches the random number either 1 or 2.
   // when the player guess is wrong take a point from their score
   //  when the player is right, congrats them
 // Function2- keep track of the score of each player.
-// the first person to hits 0 let them know they lost.
 
-// Initial Code
+// Initial Code_________________________________________________________________________________________
 
 // var pick_num = alert("Pick a number 1 or 2")
 // var players = {
@@ -96,7 +95,14 @@
 // console.log("You have guessed corectly " + (correct_score))
 // console.log("I suck " + miss_score)
 // console.log("                    ")
+// Issues
+/*__________________________________________________________________________________________________
+I made the game much more basic then I planned. I could not get a get idea for a game.
+I also felt if I used something on the internet I would be creating because I could base mine around it.
 
+Right now the game is 100% code my goal was to get it up and running in HTML so there would be ral input.
+
+__________________________________________________________________________________________________*/
 
 
 // Refactored Code_________________________________________________________________
