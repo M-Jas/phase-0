@@ -96,15 +96,12 @@ function average(array) {
 // Reflect
 
 // What did you learn about iterating over nested objects in JavaScript?
-
+  // The Rules of iterating over the hash are not as felexable, so it makes it a bit easier I feel. You just have to remember the the rules and try to apply them to your problem.
 // Were you able to find useful methods to help you with this?
   // I did not know that we could use .notation on [] functions
-// What concepts were solidified in the process of working through this challenge?
-
-
-
-
-
+  // Also using a for loop in a hash like this.
+// What concepts were solidified in the process of working through this challenge? I always
+  // Doing more iteration is very helpful for me. Also it gave me a better understanding of not hard coding a interation.
 
 
 // __________________________________________
