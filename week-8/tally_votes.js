@@ -166,13 +166,14 @@ for(var voter in votes){
  //  create a new variable for each voter
 };
 
-
-for(voter in votes){
-// if these keys have their own prop
-  if(votes.hasOwnProperty(voter)){
-//  create a new variable for each voter
-    var choices = votes[voter];
-    for(var office in choices){
+// Votes(object) with Alex(the voter(object inside votes)) which has Props for each office and their values are the person(candidate) they voted for.
+// We need to view every voter
+// We need to view/count there slection for each office
+  for(voter in votes){
+    if(votes.hasOwnProperty(voter)){
+      var choices = votes[voter];
+//______________________________________
+      for(var office in choices){
       if(choices.hasOwnProperty(office)){
       var candidate = choices[office];
       }
