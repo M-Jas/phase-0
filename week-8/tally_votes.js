@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with: Max
+// This challenge took 7 hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -34,12 +34,6 @@ var votes = {
 }
 
 // Tally the votes in voteCount.
-var voteCount = {
-  president: {},
-  vicePresident: {},
-  secretary: {},
-  treasurer: {}
-}
 
 /* The name of each student receiving a vote for an office should become a property
 of the respective office in voteCount.  After Alex's votes have been tallied,
@@ -50,20 +44,8 @@ voteCount would be ...
     secretary: { Gail: 1 },
     treasurer: { Kerry: 1 }
   }
-*/
-
-
-/* Once the votes have been tallied, assign each officer position the name of the
-student who received the most votes. */
-var officers = {
-  president: undefined,
-  vicePresident: undefined,
-  secretary: undefined,
-  treasurer: undefined
-}
 
 // Pseudocode
-/*
 Test 1.
 Input: votes variables
 Output: total number of votes for Bob for president
@@ -126,85 +108,136 @@ Output: The winner of the treasurer election.
 */
 
 // __________________________________________
-// Initial Solution
+// var voteCount = {
+//   president: {},
+//   vicePresident: {},
+//   secretary: {},
+//   treasurer: {}
+// }
 
+// var officers = {
+//   president: undefined,
+//   vicePresident: undefined,
+//   secretary: undefined,
+//   treasurer: undefined
+// }
+// voteCount.president['Bob'] = 0;
+// voteCount.vicePresident['Bob'] = 0;
+// voteCount.secretary['Bob'] = 0;
+// voteCount.treasurer['Bob'] = 0;
 
-voteCount.president['Bob'] = 0;
-voteCount.vicePresident['Bob'] = 0;
-voteCount.secretary['Bob'] = 0;
-voteCount.treasurer['Bob'] = 0;
+// for(var voter in votes){
+//    if(votes[voter].president === "Bob"){
+//       voteCount.president['Bob']++;
+//    };
+// //      console.log(tally);
+//  //  create a new variable for each voter
+// };
 
-for(var voter in votes){
-   if(votes[voter].president === "Bob"){
-      voteCount.president['Bob']++;
-   };
-//      console.log(tally);
- //  create a new variable for each voter
-};
+// for(var voter in votes){
+//    if(votes[voter].vicePresident === "Bob"){
+//       voteCount.vicePresident['Bob']++;
+//    };
+// //      console.log(tally);
+//  //  create a new variable for each voter
+// };
 
-for(var voter in votes){
-   if(votes[voter].vicePresident === "Bob"){
-      voteCount.vicePresident['Bob']++;
-   };
-//      console.log(tally);
- //  create a new variable for each voter
-};
+// for(var voter in votes){
+//    if(votes[voter].secretary === "Bob"){
+//       voteCount.secretary['Bob']++;
+//    };
+// //      console.log(tally);
+//  //  create a new variable for each voter
+// };
 
-for(var voter in votes){
-   if(votes[voter].secretary === "Bob"){
-      voteCount.secretary['Bob']++;
-   };
-//      console.log(tally);
- //  create a new variable for each voter
-};
+// for(var voter in votes){
+//    if(votes[voter].treasurer === "Bob"){
+//       voteCount.treasurer['Bob']++;
+//    };
+// //      console.log(tally);
+//  //  create a new variable for each voter
+// };
 
-for(var voter in votes){
-   if(votes[voter].treasurer === "Bob"){
-      voteCount.treasurer['Bob']++;
-   };
-//      console.log(tally);
- //  create a new variable for each voter
-};
+// // Votes(object) with Alex(the voter(object inside votes)) which has Props for each office and their values are the person(candidate) they voted for.
+// // We need to view every voter
+// // We need to view/count there slection for each office
+//   for(voter in votes){
+//     if(votes.hasOwnProperty(voter)){
+//       var choices = votes[voter];
+// //______________________________________
+//       for(var office in choices){
+//       if(choices.hasOwnProperty(office)){
+//       var candidate = choices[office];
+//       }
+//     }
+//   }
+// }
 
-// Votes(object) with Alex(the voter(object inside votes)) which has Props for each office and their values are the person(candidate) they voted for.
-// We need to view every voter
-// We need to view/count there slection for each office
-  for(voter in votes){
-    if(votes.hasOwnProperty(voter)){
-      var choices = votes[voter];
-//______________________________________
-      for(var office in choices){
-      if(choices.hasOwnProperty(office)){
-      var candidate = choices[office];
-      }
+//     for(var key in voteCount){
+//       if(voteCount.hasOwnProperty(key)){
+//       var position = voteCount[key]
+//       position[voter] = 0;
+//       }
+
+// for()
+//   if office === position && candidate === position[voter]
+//   position[voter]++;
+
+        // console.log(voteCount)
+
+// Refactored Solution_________________________________
+var voteCount = {
+ president: {},
+ vicePresident: {},
+ secretary: {},
+ treasurer: {}
+}
+
+var officers = {
+  president: undefined,
+  vicePresident: undefined,
+  secretary: undefined,
+  treasurer: undefined
+}
+
+for (var voter in votes) {
+    var voters_choices = votes[voter];
+    for(var office in voters_choices) {
+        var candidate = voters_choices[office];
+        if (voteCount[office][candidate] === undefined) {
+          voteCount[office][candidate] = 1;
+        }
+       else {
+         voteCount[office][candidate]++;
+       }
+    }
+}
+
+for (var position in voteCount){
+  var highest_vote_count = 0;
+  for (var person in voteCount[position]){
+    var persons_votes = voteCount[position][person];
+    if (persons_votes > highest_vote_count){
+      highest_vote_count = persons_votes;
+      officers[position] = person;
     }
   }
 }
-
-    for(var key in voteCount){
-      if(voteCount.hasOwnProperty(key)){
-      var position = voteCount[key]
-      position[voter] = 0;
-      }
-    }
-for()
-  if office === position && candidate === position[voter]
-  position[voter]++;
-
-// We have the correct candidate in the office area
-//
-
-        console.log(voteCount)
-
-// __________________________________________
-// Refactored Solution
+for (var position in officers){
+  console.log( officers[position] + " is the " + position );
+}
 
 // __________________________________________
 // Reflection
 
+What did you learn about iterating over nested objects in JavaScript?
+Were you able to find useful methods to help you with this?
+What concepts were solidified in the process of working through this challenge?
+
+
+
 // __________________________________________
 // Test Code:  Do not alter code below this line.
-
 
 function assert(test, message, test_number) {
   if (!test) {
