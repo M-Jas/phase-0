@@ -230,9 +230,14 @@ for (var position in officers){
 // __________________________________________
 // Reflection
 
-What did you learn about iterating over nested objects in JavaScript?
-Were you able to find useful methods to help you with this?
-What concepts were solidified in the process of working through this challenge?
+// What did you learn about iterating over nested objects in JavaScript?
+  // At first I was getting mixed up with the fact that when we are using the prop we are trying to get the value. Also I found out that you can go to deep into the nest and not even know.
+// Were you able to find useful methods to help you with this?
+//   for/in - it is a diffrent way to do a while loop.
+
+// What concepts were solidified in the process of working through this challenge?
+//   I now understand how to work through nested hashes and array.
+//   One thing that I notice so much is that I am making things more confusing than they need to be. Even when I break down all my Pseudocode.
 
 
 
