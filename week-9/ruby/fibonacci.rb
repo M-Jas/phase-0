@@ -8,13 +8,16 @@
 # Initial Solution
 
 def is_fibonacci?(num)
-  if num <= 9
-    true
-  elsif
+  plus_four =  Math.sqrt( (num * 5) ** 2 + 4)
+​
+  minus_four = Math.sqrt( (num * 5) ** 2 - 4)
+​
+  if plus_four.is_a?(Float) || minus_four.is_a?(Float)
+    return false
+  else
+    return true
   end
-
 end
-
 
 
 # Refactored Solution
